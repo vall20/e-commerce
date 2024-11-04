@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Définit la hauteur du corps du document à 100% */
+body{
+    height: 100%;
+}
+
+/* Style pour la barre de navigation */
+.bar {
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0%;
+    z-index: 999; /* S'assure que la barre reste au-dessus des autres éléments */
+    background-color: black;
+}
+
+
+
+/* Style pour les éléments du menu dans la barre */
+.bar .menu {
+    list-style: none; /* Retire les puces de la liste */
+   display: flex;/* Affiche les éléments en ligne */
+  
+}
+/* Style pour les liens du menu */
+.bar li a{
+    color:darkseagreen;
+    padding:20px;
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+.categorie{
+    color:darkseagreen;
+    position:relative ;
+  
+}
+
+
+
+.sous_cat {
+list-style: none;
+display:none;
+position: absolute;
+top: 50px;
+left: 0;
+background-color: black;
+width: max-content;
+border-radius: 25px;
+}
+
+
+
+.categorie:hover .sous_cat{
+display: block;
+}
+
+
+.sous_cat li a:hover{
+    background: floralwhite;
+border-radius: 25px;
+}
+
+
+ /*Style pour le contenu principal */
+.content{
+    background-image: url(https://images.pexels.com/photos/52518/jeans-pants-blue-shop-52518.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-size: cover;
+    display: flex;
+    padding: 0 5%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh; /* Hauteur de la vue complète */
+    color: slategray;
+    
+    background-repeat: no-repeat;
+}*/
+
+/* Style pour le titre principal du contenu */
+.content h1{
+    font-size: 40px;
+}
+
+/* Style pour les paragraphes du contenu */
+.content p{
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+/* Style pour les boutons du contenu */
+.content button{
+    margin-top: 30px;
+    padding: 15px;
+    border: none;
+    background: #f6f6;
+    color: azure;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style pour le texte des produits */
+.produits_text{
+    text-align: left;
+    font-size: 30px;
+    font-weight: 300;
+    margin-top: 30px;
+    margin-left: 80px;
+    color: #424144;
+}
+
+/* Style pour la section des produits */
+.section_produit{
+    padding: 40px 5;
+}
+
+/* Style pour l'affichage des produits en grille */
+.produits{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+/* Style pour chaque carte produit */
+.produits .carte{
+    width: 310px;
+    background: silver;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+/* Style pour les images dans les cartes produit */
+.produits .carte img{
+    height: 250px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Style pour la description dans les cartes produit */
+.produits .carte .desc{
+    padding: 5px 20px;
+    opacity: 0.8;
+}
+
+/* Style pour les titres des cartes produit */
+.produits .carte .titre{
+    font-weight: 900;
+    font-size: 20px;
+    color: #424144;
+    padding: 0 20px;
+}
+
+/* Style pour le conteneur de la boîte des cartes produit */
+.produits .carte .box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Style pour les prix des produits */
+.produits .carte .prix{
+    color: rosybrown;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* Style pour le bouton d'achat au survol */
+.produits .carte .box .achat:hover{
+    cursor: pointer;
+    background: black;
+    color: white;
+}
